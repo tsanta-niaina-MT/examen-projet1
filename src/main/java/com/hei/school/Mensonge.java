@@ -3,13 +3,13 @@ package com.hei.school;
 import lombok.Getter;
 
 @Getter
-public final class AffirmationFausse extends Affirmation{
-    public AffirmationFausse(String texte) {
+public final class Mensonge extends Affirmation{
+    public Mensonge(String texte) {
         super(texte);
     }
 
     @Override
-    public boolean peutEtreVrai() {
-        return false;
+    public String peutEtreVraie() {
+        return "false";
     }
 }
